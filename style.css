@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Roboto+Condensed');
+
+body{
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+header h1{
+    color: white;
+    padding: 32px 8px 32px 8px;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+header p{
+    color: white;
+    padding: 8px;
+}
+
+.header{
+    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+}
+
+
+
+.container{
+    display: flex;
+    padding:4px;
+    background: #59C173;
+    background: linear-gradient(to right,#355C7D,#6C5B7B,#C06C84);
+    color: rgb(255, 255, 255);
+    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+section h2{
+    text-align: center;
+    background: -webkit-linear-gradient(#59C173,#a17fe0,#5D26C1);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.myFonts{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.my-photo{
+    width: 50vw;
+    align-self: auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin: 8px;
+    width: 14vw;
+    justify-content: center;
+    text-align: center;
+    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5px;
+}
+
+.tech-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 0 0 0;
+    width: 50%;
+}
+
+.container1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    align-items: stretch;
+    align-content: stretch;
+    box-align: center;
+    justify-content: space-around;
+    background: #59C173;
+    background: linear-gradient(to right,#355C7D,#6C5B7B,#C06C84);
+    color: rgb(255, 255, 255);
+    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+card p{
+    align-self: stretch;
+}
+
+@media only screen and (max-width:540px) and (min-width:264px){
+    .container{
+        flex-wrap: wrap-reverse;
+        margin: auto;
+    }
+
+    .my-photo{
+        width:100%;
+        box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .container1{
+        flex-direction: row;
+        margin: auto;
+        padding: 4px;
+    }
+
+    .card{
+        padding: 4px;
+        width: 40%;
+        margin:16px 8px 16px 8px;
+    }
+}
+
+@media screen and (min-width:541px) and (max-width:949px){
+    .my-photo{
+        width: 35vw;
+    }
+}
+
+@media only screen and (min-width:950px){
+    .my-photo{
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width:749px) and (min-width:541px){
+    .card{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:263px){
+    .card{
+        width: 80%;
+    }
+}
