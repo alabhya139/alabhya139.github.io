@@ -90,6 +90,11 @@ card p{
     cursor: pointer;
 }
 
+#prajjwalan:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
 .project-card{
     display: flex;
     flex-direction: column;
@@ -138,7 +143,7 @@ footer{
     margin:8px;
 }
 
-@media only screen and (max-width:540px) and (min-width:365px){
+@media only screen and (max-width:540px) and (min-width:320px){
     .container{
         flex-wrap: wrap-reverse;
         margin: auto;
@@ -163,7 +168,7 @@ footer{
     }
 }
 
-@media only screen and (max-width:365px) {
+@media only screen and (max-width:320px) {
     .container{
         flex-wrap: wrap-reverse;
         margin: auto;
