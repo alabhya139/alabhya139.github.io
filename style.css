@@ -33,7 +33,7 @@ header p{
 
 section h2{
     text-align: center;
-    background: -webkit-linear-gradient(#59C173,#a17fe0,#5D26C1);
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
 }
