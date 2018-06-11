@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Roboto+Condensed');
 
-body{
+html,body{
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    margin: 0;
 }
 
 header h1{
@@ -9,11 +10,13 @@ header h1{
     padding: 32px 8px 32px 8px;
     font-family: 'Carrois Gothic SC', sans-serif;
     box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+    margin: 0 0 0 0;
 }
 
 header p{
     color: white;
     padding: 8px;
+    margin-top: 0;
 }
 
 .header{
@@ -24,7 +27,7 @@ header p{
 
 .container{
     display: flex;
-    padding:4px;
+    padding:8px;
     background: #59C173;
     background: linear-gradient(to right,#355C7D,#6C5B7B,#C06C84);
     color: rgb(255, 255, 255);
@@ -118,8 +121,7 @@ card p{
 }
 
 footer{
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
-    background-blend-mode: multiply,multiply;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 #projects{
@@ -131,16 +133,24 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 8px;
+    padding-bottom: 16px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 .footer-para{
     text-align: center;
     color: white;
+    padding: 2% 0 1% 0;
+    margin-bottom: 0;
+
 }
 
 .contact-link{
     margin:8px;
+}
+
+.tech-name{
+    color: #09203f;
 }
 
 @media only screen and (max-width:540px) and (min-width:320px){
