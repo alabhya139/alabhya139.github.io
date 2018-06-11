@@ -24,7 +24,7 @@ header p{
 }
 
 
-
+/* main container style for about me section  */
 .container{
     display: flex;
     padding:8px;
@@ -48,7 +48,7 @@ section h2{
     width: 50vw;
     align-self: auto;
 }
-
+/* cards to display technologies I am interested in*/
 .card{
     display: flex;
     flex-direction: column;
@@ -61,7 +61,7 @@ section h2{
     box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
     border-radius: 5px;
 }
-
+/*image of technoligies of card section*/
 .tech-image{
     display: block;
     margin-left: auto;
@@ -69,7 +69,7 @@ section h2{
     padding: 16px 0 0 0;
     width: 50%;
 }
-
+/* conainer style for technologies I am interested in*/
 .container1{
     display: flex;
     flex-wrap: wrap;
@@ -98,6 +98,7 @@ card p{
     cursor: pointer;
 }
 
+/* cards style for project section*/
 .project-card{
     display: flex;
     flex-direction: column;
@@ -112,6 +113,7 @@ card p{
     border-radius: 5px;
 }
 
+/* icons for project section */
 .project-image{
     display: block;
     margin-left: auto;
