@@ -129,8 +129,6 @@ nav{
 .anim {
     background: linear-gradient(323deg, #22324e, #092944, #c06c84);
     background-size: 600% 600%;
-    -webkit-animation: grad-anim 6s ease infinite;
-    -moz-animation: grad-anim 6s ease infinite;
     animation: grad-anim 6s ease infinite;
 }
 
