@@ -1,26 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Quicksand');
 
 html,body{
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
     margin: 0;
 }
 
-header h1{
-    color: white;
-    padding: 32px 8px 32px 8px;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
-    margin: 0 0 0 0;
-}
 
-header p{
-    color: white;
-    padding: 8px;
-    margin-top: 0;
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header{
-    background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #30D2BE 100%);
+    color: white;
+    font-family: 'Carrois Gothic SC', sans-serif;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+
+.title h1{
+    color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+
+    animation: 
+    typing 8s infinite ;
+}
+
+.heading{
+    margin-left: 0;
+}
+
+.empty{
+    flex-grow: 1;
+}
+
+.title{
+    display: flex;
+    flex-grow: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 8px;
+    color: white;
+    font-size: 2.5vmin;
+}
+
+.fas{
+    display: none;
+    margin: auto 8px auto 8px;
+}
+
+.plex-font{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.quicksand-font{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.inline{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    font-size: 3vmin;
+    color: white;
+    display: inline;
+    margin: 8px;
+    padding: 8px;
+}
+
+li:hover{
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.no-gutter{
+    padding: 0;
+    margin: 0;
+}
+
+#toggle-button:hover{
+    cursor: pointer;
+}
+
+@media only screen and (max-width:710px){
+    .inline{
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header{
+        flex-direction: column;
+        padding: 8px 0 8px 0;
+    }
+
+    .fas{
+        display: block;
+    }
 }
 
 
@@ -28,10 +122,52 @@ header p{
 .container{
     display: flex;
     padding:8px;
-    background: #59C173;
-    background: linear-gradient(to right,#355C7D,#6C5B7B,#C06C84);
     color: rgb(255, 255, 255);
     box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.anim {
+    background: linear-gradient(323deg, #22324e, #092944, #c06c84);
+    background-size: 600% 600%;
+    -webkit-animation: grad-anim 6s ease infinite;
+    -moz-animation: grad-anim 6s ease infinite;
+    animation: grad-anim 6s ease infinite;
+}
+
+@-webkit-keyframes grad-anim {
+    0% {
+        background-position: 47% 0%
+    }
+    50% {
+        background-position: 54% 100%
+    }
+    100% {
+        background-position: 47% 0%
+    }
+}
+
+@-moz-keyframes grad-anim {
+    0% {
+        background-position: 47% 0%
+    }
+    50% {
+        background-position: 54% 100%
+    }
+    100% {
+        background-position: 47% 0%
+    }
+}
+
+@keyframes grad-anim {
+    0% {
+        background-position: 47% 0%
+    }
+    50% {
+        background-position: 54% 100%
+    }
+    100% {
+        background-position: 47% 0%
+    }
 }
 
 section h2{
@@ -45,8 +181,10 @@ section h2{
 }
 
 .my-photo{
+    border-radius: 50%;
     width: 50vw;
     align-self: auto;
+    box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
 }
 /* cards to display technologies I am interested in*/
 .card{
@@ -55,7 +193,7 @@ section h2{
     background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
     color: rgb(0, 0, 0);
     margin: 8px;
-    width: 13.5vw;
+    width: 16vw;
     justify-content: center;
     text-align: center;
     box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
@@ -78,8 +216,6 @@ section h2{
     align-content: stretch;
     box-align: center;
     justify-content: space-around;
-    background: #59C173;
-    background: linear-gradient(to right,#355C7D,#6C5B7B,#C06C84);
     color: rgb(255, 255, 255);
     box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
 }
@@ -98,6 +234,10 @@ card p{
     cursor: pointer;
 }
 
+#whatsapp-clone:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
 /* cards style for project section*/
 .project-card{
     display: flex;
@@ -162,7 +302,9 @@ footer{
     }
 
     .my-photo{
-        width:100%;
+        display: block;
+        margin: 0 auto;
+        width:80%;
         box-shadow:0 4px 6px rgba(0,0,0,0.42), 0 1px 2px rgba(0,0,0,0.24);
     }
 
@@ -242,3 +384,9 @@ footer{
         width: 20%;
     }
 }
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }

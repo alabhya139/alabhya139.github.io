@@ -2,23 +2,32 @@
 <html>
 
 <head>
-	<meta name="viewport" content="width = device-width" initial-scale="1.0" />
+	<meta name="viewport" content="width = device-width, initial-scale=1.0" />
+	<meta charset="utf-8"/>
 	<title>ALABHYA PANDEY</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 	<header class="header">
-		<h1>Alabhya Pandey</h1>
-		<p class="myFonts">
-			<strong>WEB DEVELOPER | ANDROID DEVELOPER | LOVE MATHEMATICS</strong>
-		</p>
-	</header>
+        <div class="title">
+			<h1 class="quicksand-font heading"><strong>ALABHYA PANDEY</strong></h1>
+            <i id="toggle-button" class="fas fa-bars fa-2x"></i>
+		</div>
+
+        <nav class="nav-bar">
+            <ul class="plex-font inline">
+                <li class="navi-bar">ABOUT ME</li>
+                <li class="accordion"><a href="#skills" target="_blank">SKILLS</a></li>
+                <li class="modal">PROJECTS</li>
+            </ul>
+        </nav>
+    </header>
 
 	<section id="about-me">
 		<h2 class="myFonts">ABOUT ME</h2>
-		<div class="container myFonts">
+		<div class="container myFonts anim">
 			<article>
 				<h4>INTRODUCTION:</h3>
 					<p>I am Alabhya Pandey, a Computer Science enthusiast. I just love to experiment with the latest technologies. I have some
@@ -40,19 +49,19 @@
 	</section>
 	<!-- Section containing Technologies I am interested in-->
 	<section id="interests">
-		<h2 class="myFonts">INTEREST IN TECHNOLOGIES</h2>
-		<div class="container1">
+		<h2 id="skills"class="myFonts">SKILLS</h2>
+		<div class="container1 anim">
 			<div class="card">
-				<img class="tech-image" src="images/html.png" alt="HTML 5">
-				<p class="tech-name myFonts">HTML</p>
+				<img class="tech-image" src="images/htmlcssjavascript.png" alt="HTML 5">
+				<p class="tech-name myFonts">HTML|CSS|JavaScript</p>
 			</div>
 			<div class="card">
-				<img class="tech-image" src="images/css3.gif" alt="HTML 5">
-				<p class="tech-name myFonts">CSS</p>
+				<img class="tech-image" src="images/java.png" alt="HTML 5">
+				<p class="tech-name myFonts">Java</p>
 			</div>
 			<div class="card">
-				<img class="tech-image" src="images/javascript.png" alt="HTML 5">
-				<p class="tech-name myFonts">JavaScript</p>
+				<img class="tech-image" src="images/algorithm.jpg" alt="HTML 5">
+				<p class="tech-name myFonts">Data Structure and Algorithm</p>
 			</div>
 			<div class="card">
 				<img class="tech-image" src="images/machine-learning.png" alt="HTML 5">
@@ -66,26 +75,42 @@
 				<img class="tech-image" src="images/Android-apps-Developer.png" alt="HTML 5">
 				<p class="tech-name myFonts">Android Development</p>
 			</div>
+			<div class="card">
+				<img class="tech-image" src="images/seeicons__57e90b703eba6.png" alt="HTML 5">
+				<p class="tech-name myFonts">Bootstrap</p>
+			</div>
+			<div class="card">
+				<img class="tech-image" src="images/logo-jquery-png-jquery-320.png" alt="HTML 5">
+				<p class="tech-name myFonts">jQuery</p>
+			</div>
+			<div class="card">
+				<img class="tech-image" src="images/1200px-ISO_C++_Logo.svg.png" alt="HTML 5">
+				<p class="tech-name myFonts">C++</p>
+			</div>
+			<div class="card">
+				<img class="tech-image" src="images/sass.png" alt="HTML 5">
+				<p class="tech-name myFonts">Sass</p>
+			</div>
 		</div>
 	</section>
 	<!-- Section to display Projects I have done before-->
 	<section id="projects">
 		<h2 class="myFonts">PROJECTS</h2>
-		<div class="container1">
+		<div class="container1 anim">
 			<div id="prajjwalan" class="project-card">
-				<img class="project-image" src="images/prajjwalan.png" alt="HTML 5">
+				<img class="project-image" src="images/prajjwalan.png" alt="Prajjwalan">
 				<p class="tech-name myFonts">PRAJJWALAN
 					<br>App for our college Techfest</p>
 			</div>
 
 			<div id="portfolio" class="project-card">
-				<img class="project-image" src="images/portfolio.png" alt="HTML 5">
+				<img class="project-image" src="images/portfolio.png" alt="Portfolio">
 				<p class="tech-name myFonts">My Portfolio Website</p>
 			</div>
 
-			<div class="project-card">
-				<img class="project-image" src="images/comingsoon.png" alt="HTML 5">
-				<p class="tech-name myFonts">Coming Soon</p>
+			<div id="whatsapp-clone"class="project-card">
+				<img class="project-image" src="images/whatsapp.png" alt="WhatsApp Clone">
+				<p class="tech-name myFonts">WhatsApp Clone Ui</p>
 			</div>
 		</div>
 	</section>
@@ -94,19 +119,20 @@
 		<section>
 			<div class="footer-contact">
 				<a class="contact-link" href="https://github.com/alabhya139" target="_blank">
-					<i class="fa fa-github-alt" style="font-size:32px;color:white"></i>
+					<i style="font-size: 32px; color: white;" class="fab fa-github"></i>
 				</a>
 				<a class="contact-link" href="https://www.facebook.com/alabhya.pandey.14" target="_blank">
-					<i class="fa fa-facebook-square" style="font-size:32px;color:rgb(255, 255, 255)"></i>
+					<i style="font-size: 32px; color: white;" class="fab fa-facebook-square"></i>
 				</a>
 				<a class="contact-link" href="https://www.linkedin.com/in/alabhya-pandey-654270102/" target="_blank">
-					<i class="fa fa-linkedin-square" style="font-size:32px;color:rgb(255, 255, 255)"></i>
+					<i style="font-size: 32px; color: white;" class="fab fa-linkedin"></i>
 				</a>
 			</div>
 			<p class="footer-para myFonts">&copy 2018 Designed and Developed by Alabhya Pandey</p>
 		</section>
 	</footer>
 	<!-- JavaScript file for managing clicks on projects-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="script.js"></script>
 </body>
 
