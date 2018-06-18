@@ -19,13 +19,15 @@ wapp.onclick = () => {
 
 $(document).ready(()=>{
     $('#toggle-button').click(()=>{
-        console.log("clicked");
-        $('.nav-bar').slideToggle('slow');
-        $(document).click(function(e) {
-            if (!$(e.target).is('#toggle-button')) {
+        $('.nav-bar').slideToggle('5000');
+    });
+
+    $(document).click(function(event) {
+        if($(window).width()<=710){
+            if (!$(event.target).is('#toggle-button')) {
                 $('.nav-bar').hide('slow');	    
             }
-        });
+        }
     });
 
     if ($(window).width() <= 710) {
