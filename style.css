@@ -289,6 +289,9 @@ footer{
 .span:active{
     box-shadow:4px 4px 4px rgba(0, 162, 255, 0.568);
 }
+footer{
+    margin-top: 32px;
+}
 
 @media only screen and (max-width:540px) and (min-width:320px){
     .container{
